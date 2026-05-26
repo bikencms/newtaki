@@ -183,6 +183,7 @@ class HelperService {
     }
 
     public function getOutLink() {
+        return '';
         $outlink = env('OUTLINK', '');
         $response = Http::get($outlink);
         if( $response->ok() ) {
