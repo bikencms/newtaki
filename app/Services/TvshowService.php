@@ -172,7 +172,7 @@ class TvshowService {
                 } else if (preg_match("/moviehqu.com/i", $newChanel)) {
                     $chanel = str_replace('moviehqu.com', 'image002.modooup.com', $newChanel);
                 } else {
-                    $chanel = 'https://image002.modooup.com' . $newChanel;
+                    $chanel = '/images' . $newChanel;
                 }
             } else {
                 $chanel = env('IMAGE_PLACEHOLDER');
