@@ -71,7 +71,7 @@ if( isset($_REQUEST['key']) && $_REQUEST['key'] == '123456' && isset($_REQUEST['
 					array(
 						"title" => $title,
 						"link"  => $links,
-						"backlink" => "https://moviehqu.com/".$r->post_type."/".$r->post_name
+						"backlink" => "https://movieaxn.com/".$r->post_type."/".$r->post_name
 					)
 				);
 				  

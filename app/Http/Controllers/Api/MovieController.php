@@ -192,7 +192,8 @@ class MovieController extends Controller
         $watch = $request->get('watch', '');
         $countViewId = $request->get('countViewId', '');
         if ($countViewId) {
-            Http::get('https://moviehqu.com/rest-api/popular/movie/' . $countViewId . '/');
+            return "";
+            Http::get('https://movieaxn.com/rest-api/popular/movie/' . $countViewId . '/');
             return response()->json(['status' => 'OK'], Response::HTTP_OK);
         }
         if( $watch != '' ) {
