@@ -11,7 +11,7 @@ $backlink = "";
 $data = NULL;
 if( (isset($_REQUEST['p']) && $_REQUEST['p'] != '') || (isset($_REQUEST['pid']) && $_REQUEST['pid'] != '') ){
     $pid = isset($_REQUEST['p'])?$_REQUEST['p']:$_REQUEST['pid'];
-    $url = "https://backend.moviehqu.com/outlink/outlink.php?key=123456&post_id=".$pid;
+    $url = "https://api.movieaxn.com/outlink/outlink.php?key=123456&post_id=".$pid;
     $data = @file_get_contents($url);
     $data = json_decode($data);
     

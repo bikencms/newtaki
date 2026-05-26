@@ -200,6 +200,7 @@ class HelperService {
     }
 
     public function getKokoatvLink(int $postId) {
+        return '';
         $outlink = env('OUTLINKSTEP2', '');
         $response = Http::get($outlink, [ 'key' => 123456, 'post_id' => $postId ]);
         if( $response->ok() ) {
